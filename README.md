@@ -20,7 +20,7 @@ The entire dataset of neural network weights is available
 
 The dataset contains two different subsets: 
 * 3,000 trained nets with fixed architecture (**nws_fixed**) and randomly selected dataset and hyper-parameters (see the paper for details).
-* 13,000 trained nets with randomly selected architecture (**nws_main**).
+* 13,000 trained nets with randomly selected architecture (**nws_main**), dataset and hyper-parameters.
 
 Each of these has been split into a training and test set, by means of the provided CSV files. Also, the CSV files contain information about the architecture and hyper-parameters of each trained net.
 
