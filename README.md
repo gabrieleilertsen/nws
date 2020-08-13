@@ -22,7 +22,7 @@ The dataset contains two different subsets:
 * **nws_fixed**: 3,000 trained nets with fixed architecture, and randomly selected dataset and hyper-parameters (see the paper for details).
 * **nws_main**: 13,000 trained nets with randomly selected architecture, dataset and hyper-parameters.
 
-Each of these has been split into a training and test set, by means of the provided CSV files. Also, the CSV files contain information about the architecture and hyper-parameters of each trained net.
+Each of these has been split into a training and test set, by means of the provided CSV files. Also, the CSV files contain information about the architecture and hyper-parameters of each trained net. Note also that the CSV files do not utilize all the trained CNNs. Some models have been excluded due to poor convergence in training (very low test accuracy).
 
 Providing the path to a certain CSV file, [`util.import_weights()`](https://github.com/gabrieleilertsen/nws/blob/9c131051ad7c391e502b2a84bd6f9dd4f9daa55a/util.py#L81) can be used to read a dataset with annotations for a selected hyper-parameter.
 
