@@ -19,8 +19,8 @@ The entire dataset of neural network weights is available
 [here](https://liuonline-my.sharepoint.com/:f:/g/personal/gabei62_liu_se/ErHWT-psvCNPr0yyQmybqfUBSMIjyO7LNMGTdUBRcIEj1Q). The dataset consists of 16,000 CNNs, captured at 20 different steps during training, from initialization to converged model. This means that the dataset in total is comprised of 320,000 CNN weight snapshots.
 
 The dataset contains two different subsets: 
-* 3,000 trained nets with fixed architecture (**nws_fixed**) and randomly selected dataset and hyper-parameters (see the paper for details).
-* 13,000 trained nets with randomly selected architecture (**nws_main**), dataset and hyper-parameters.
+* **nws_fixed**: 3,000 trained nets with fixed architecture, and randomly selected dataset and hyper-parameters (see the paper for details).
+* **nws_main**: 13,000 trained nets with randomly selected architecture, dataset and hyper-parameters.
 
 Each of these has been split into a training and test set, by means of the provided CSV files. Also, the CSV files contain information about the architecture and hyper-parameters of each trained net.
 
