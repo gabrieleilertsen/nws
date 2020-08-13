@@ -11,7 +11,7 @@ tf.flags.DEFINE_string("data_train", "data_train.csv", "Path to training data cs
 tf.flags.DEFINE_string("data_test", "data_test.csv", "Path to test data csv")
 
 tf.flags.DEFINE_string("log_dir", "/mnt/raid/dnn_weights/output", "Path to output directory")
-tf.flags.DEFINE_string("model_pth", None, "Path to pre-trained model") #'trainings/output_triplet_K10/log/model.ckpt-39500'
+tf.flags.DEFINE_string("model_pth", None, "Path to pre-trained model")
 
 tf.flags.DEFINE_integer("batch_size", 64, "Batch size")
 tf.flags.DEFINE_float("learning_rate", 1e-3, "Learning rate")
@@ -19,7 +19,7 @@ tf.flags.DEFINE_integer("epochs", 50, "Epochs")
 tf.flags.DEFINE_bool("shuffle_epochs", True, "Re-shuffle at each epoch")
 tf.flags.DEFINE_float("dropout", 0.5, "Drop-out before final output")
 tf.flags.DEFINE_bool("batchn", True, "Batch normalization")
-tf.flags.DEFINE_integer("decay_frequency", 50, "Epochs")
+tf.flags.DEFINE_integer("decay_frequency", 50, "How many times to decay learning rate during training")
 
 tf.flags.DEFINE_integer("prop", 0, "Property to train for")
 tf.flags.DEFINE_integer("dnn_part", 0, "Which part of weight vector: 0 - all, 1 - conv, 2 - fc")
