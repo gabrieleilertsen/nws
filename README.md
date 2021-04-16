@@ -3,7 +3,7 @@
 ## General
 We have trained a collection of 16,000 deep convolutional neural networks, for the purpose of performing a dissection of the weight space of neural nets. This repository provides scripts for training additional networks, as well as training meta-classifiers. A meta-classifier takes the sampled weight space as training data input and the objective is to classify which hyper-parameters were used for training a specific weight sample. For example, given only the weights of a network, can we predict which dataset was used in training the model? The purpose of a meta-classifier is to probe for information in neural network weights, in order to learn about how optimization locally shapes the weights of a network.
 
-For information on the study of the weight space, we refer to the [paper](http://ecai2020.eu/papers/787_paper.pdf), presented at the [European Conference on Artificial Intelligence](http://ecai2020.eu/) (ECAI 2020):
+For information on the study of the weight space, we refer to the [paper](https://arxiv.org/abs/2002.05688), presented at the [European Conference on Artificial Intelligence](http://ecai2020.eu/) (ECAI 2020):
 
 ```
 @article{EJRUY20,
